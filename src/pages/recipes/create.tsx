@@ -18,9 +18,9 @@ export default function CreateUser() {
       <Header></Header>
       <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
         <SideBar></SideBar>
-        <Box flex="1" borderRadius={8} bg="gray.800" padding={["6", "8"]}>
+        <Box flex="1" borderRadius={8} bg="gray.100" padding={["6", "8"]}>
           <Heading size="lg" fontWeight="normal">
-            Criar Usuário
+            Postagem de receita
           </Heading>
           <Divider my="6" borderColor="gray.700"></Divider>
           <VStack spacing="8">

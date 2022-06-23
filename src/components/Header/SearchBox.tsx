@@ -13,15 +13,15 @@ export function SearchBox() {
       alignSelf="center"
       color="gray.200"
       position="relative"
-      bg="gray.800"
+      bg="blue.900"
       borderRadius="full"
     >
       <Input
         color="gray.50"
         variant="unstyled"
-        placeholder="Buscar na plataforma"
+        placeholder="Buscar Receita"
         _placeholder={{
-          color: "gray.400",
+          color: "gray.200",
         }}
         px="4"
         mr="4"

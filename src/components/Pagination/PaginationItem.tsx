@@ -15,10 +15,11 @@ export function PaginationItem({
         size="sm"
         fontSize="xs"
         width="4"
-        colorScheme="pink"
+        colorScheme="whiteAlpha"
+        _hover={{ bg: "gray.500" }}
         disabled
         _disabled={{
-          bg: "pink.500",
+          bg: "blue.900",
           cursor: "default",
         }}
       >
@@ -31,7 +32,7 @@ export function PaginationItem({
       size="sm"
       fontSize="xs"
       width="4"
-      bgColor="gray.700"
+      bgColor="gray.200"
       _hover={{ bg: "gray.500" }}
     >
       {number}

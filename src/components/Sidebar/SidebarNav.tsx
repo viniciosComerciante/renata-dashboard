@@ -5,6 +5,10 @@ import {
   RiGitMergeLine,
   RiInputMethodLine,
 } from "react-icons/ri";
+
+import {
+  GiCook
+} from "react-icons/gi";
 import { NavLink } from "./NavLink";
 import { NavSection } from "./NavSection";
 
@@ -12,13 +16,13 @@ export function SidebarNav() {
   return (
     <Stack spacing="12" align="flex-start">
       <NavSection title="GERAL">
-        <NavLink icon={RiDashboardLine}>Dashboard</NavLink>
-        <NavLink icon={RiContactsLine}>Usuários</NavLink>
+        <NavLink icon={GiCook}>Receitas</NavLink>
+        {/* <NavLink icon={RiContactsLine}>Usuários</NavLink> */}
       </NavSection>
-      <NavSection title="AUTOMAÇÃO">
+      {/* <NavSection title="AUTOMAÇÃO">
         <NavLink icon={RiInputMethodLine}>Formulários</NavLink>
         <NavLink icon={RiGitMergeLine}>Automação</NavLink>
-      </NavSection>
+      </NavSection> */}
     </Stack>
   );
 }

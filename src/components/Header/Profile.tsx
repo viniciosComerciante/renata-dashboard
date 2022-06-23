@@ -9,16 +9,16 @@ export function Profile({ showProfileData = true }: ProfileProps) {
     <Flex align="center">
       {showProfileData && (
         <Box mr="4" textAlign="right">
-          <Text>Vinicios Oliveira</Text>
+          <Text>Administrador Renata</Text>
           <Text color="gray.300" fontSize="small">
-            vinicompif@gmail.com
+            vinicios@renata.com.br
           </Text>
         </Box>
       )}
       <Avatar
         size="md"
-        name="vinicios oliveira"
-        src="https://github.com/viniciosComerciante.png"
+        name="Renata"
+        src="https://renata.com.br/assets/img/logo-renata.svg"
       ></Avatar>
     </Flex>
   );

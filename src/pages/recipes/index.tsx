@@ -30,46 +30,48 @@ export default function UserList() {
       <Header></Header>
       <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
         <SideBar></SideBar>
-        <Box flex="1" borderRadius={8} bg="gray.800" padding="8">
+        <Box flex="1" borderRadius={8} bg="gray.100" padding="8">
           <Flex mb="8" justify="space-between" align="center">
-            <Heading size="lg" fontWeight="normal">
-              Usuários
+            <Heading size="lg" fontWeight="normal" color="gray.800">
+              Receitas Publicadas
             </Heading>
             <Button
               as="a"
               size="sm"
               fontSize="small"
-              colorScheme="pink"
+              colorScheme="whiteAlpha"
+              background="blue.900"
+              _hover={{ bg: "gray.500" }}
               leftIcon={<Icon fontSize="20" as={RiAddLine} />}
             >
-              Criar novo usuário
+              Publicar Nova Receita
             </Button>
           </Flex>
-          <Table colorScheme="whiteAlpha">
+          <Table colorScheme="blackAlpha">
             <Thead>
               <Tr>
                 <Th px={["4", "4", "6"]} color="gray.300" width="8">
-                  <Checkbox colorScheme="pink"></Checkbox>
+                  <Checkbox></Checkbox>
                 </Th>
-                <Th>Usuário</Th>
-                {isWideVersion && <Th>Data de cadastro</Th>}
+                <Th>Título</Th>
+                {isWideVersion && <Th>Status da Publicação</Th>}
                 <Th width="8"></Th>
               </Tr>
             </Thead>
             <Tbody>
               <Tr>
                 <Td px={["4", "4", "6"]}>
-                  <Checkbox colorScheme="pink"></Checkbox>
+                  <Checkbox colorScheme="whiteAlpha"></Checkbox>
                 </Td>
                 <Td>
                   <Box>
-                    <Text fontWeight="bold">Vinicios Oliveira</Text>
+                    <Text fontWeight="bold">Bolo Piscininha de Cenoura</Text>
                     <Text fontWeight="normal" fontSize="sm" color="gray.300">
-                      vinicompif@gmail.com
+                    Bolo feito com Mistura para Bolo Renata sabor cenoura, coberto com brigadeiro cremoso.
                     </Text>
                   </Box>
                 </Td>
-                {isWideVersion && <Td>04 de Abril, 2021</Td>}
+                {isWideVersion && <Td color="#38A169">Published</Td>}
                 {isWideVersion && (
                   <Td>
                     {" "}
@@ -77,7 +79,9 @@ export default function UserList() {
                       as="a"
                       size="sm"
                       fontSize="small"
-                      colorScheme="purple"
+                      colorScheme="blue"
+                      _hover={{ bg: "gray.500" }}
+                      backgroundColor="blue.900"
                       leftIcon={<Icon fontSize="16" as={RiPencilLine} />}
                     >
                       Editar
@@ -87,17 +91,17 @@ export default function UserList() {
               </Tr>
               <Tr>
                 <Td px={["4", "4", "6"]}>
-                  <Checkbox colorScheme="pink"></Checkbox>
+                  <Checkbox colorScheme="whiteAlpha"></Checkbox>
                 </Td>
                 <Td>
                   <Box>
-                    <Text fontWeight="bold">Vinicios Oliveira</Text>
+                    <Text fontWeight="bold">Macarrão com molho branco e brócolis</Text>
                     <Text fontWeight="normal" fontSize="sm" color="gray.300">
-                      vinicompif@gmail.com
+                    Macarrão Penne RENATA ao molho branco à base de Farinha de Trigo RENATA e Brócolis.
                     </Text>
                   </Box>
                 </Td>
-                {isWideVersion && <Td>04 de Abril, 2021</Td>}
+                {isWideVersion && <Td color="#DD6B20">Draft</Td>}
                 {isWideVersion && (
                   <Td>
                     {" "}
@@ -105,7 +109,8 @@ export default function UserList() {
                       as="a"
                       size="sm"
                       fontSize="small"
-                      colorScheme="purple"
+                      colorScheme="blue"
+                      backgroundColor="blue.900"
                       leftIcon={<Icon fontSize="16" as={RiPencilLine} />}
                     >
                       Editar
